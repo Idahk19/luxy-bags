@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "name": "Leather Tote Bag",
+    "price": "KSh 3,500",
+    "image": "/images/bag1.jpg",
+    "description": "A spacious everyday leather tote."
+  },
+  {
+    "id": 2,
+    "name": "Shoulder Bag",
+    "price": "KSh 2,800",
+    "image": "/images/bag2.jpg",
+    "description": "A stylish shoulder bag for daily use."
+  },
+  {
+    "id": 3,
+    "name": "Crossbody Bag",
+    "price": "KSh 2,500",
+    "image": "/images/bag3.jpg",
+    "description": "Lightweight and comfortable for everyday wear."
+  },
+  {
+    "id": 4,
+    "name": "Handbag",
+    "price": "KSh 3,200",
+    "image": "/images/bag4.jpg",
+    "description": "A classic handbag with a modern look."
+  },
+  {
+    "id": 5,
+    "name": "Mini Bag",
+    "price": "KSh 2,200",
+    "image": "/images/bag5.jpg",
+    "description": "A compact bag for your essentials."
+  },
+  {
+    "id": 6,
+    "name": "Travel Tote",
+    "price": "KSh 4,000",
+    "image": "/images/bag6.jpg",
+    "description": "Perfect for travel and weekend trips."
+  },
+  {
+    "id": 7,
+    "name": "Office Bag",
+    "price": "KSh 3,800",
+    "image": "/images/bag7.jpg",
+    "description": "Ideal for work with plenty of storage."
+  },
+  {
+    "id": 8,
+    "name": "Bucket Bag",
+    "price": "KSh 3,000",
+    "image": "/images/bag8.jpg",
+    "description": "A trendy bucket bag with a roomy interior."
+  }
+]
