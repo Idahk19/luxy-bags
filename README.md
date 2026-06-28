@@ -1,16 +1,111 @@
-# React + Vite
+# Luxy Bags
+A modern, responsive e-commerce website for showcasing luxury handbags. 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+ It showcases a collection of stylish handbags by fetching product data from a local JSON file and displaying it dynamically. The project demonstrates the use of React components, hooks, and responsive design using Tailwind CSS.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the ESLint configuration
+- Responsive navigation bar
+- Attractive hero section
+- Dynamic product listing using `fetch()`
+- Products rendered with the `.map()` function
+- Reusable Product Card component
+- Responsive grid layout
+- Beautiful footer
+- Mobile-friendly design
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Tech Stack
+
+- **Frontend:** React
+- **Build Tool:** Vite
+- **Styling:** Tailwind CSS
+- **Language:** JavaScript (ES6+)
+- **Version Control:** Git & GitHub
+
+---
+##  Tech Stack
+React
+Vite
+Tailwind CSS
+Javascript
+GitHub
+
+## Project Structure
+
+```text
+luxy-bags/
+│
+├── public/
+│   ├── images/
+│   └── products/
+│       └── products.json
+│
+├── src/
+│   ├── components/
+│   │   ├── Navbar.jsx
+│   │   ├── Hero.jsx
+│   │   ├── ProductCard.jsx
+│   │   ├── ProductList.jsx
+│   │   └── Footer.jsx
+│   │
+│   ├── App.jsx
+│   └── main.jsx
+│
+├── package.json
+├── vite.config.js
+└── README.md
+```
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!
+
+1. Fork the repository.
+2. Create a new feature branch.
+
+```bash
+git checkout -b feature/your-feature
+```
+
+3. Commit your changes.
+
+```bash
+git commit -m "Add new feature"
+```
+
+4. Push to your branch.
+
+```bash
+git push origin feature/your-feature
+```
+
+5. Open a Pull Request.
+
+---
+
+##  Future Improvements
+
+
+- Backend integration
+- Payment integration
+
+## Author
+
+**Idah Karwitha**
+
+- GitHub: https://github.com/Idahk19
+
+---
+
+## License
+
+This project is licensed under the MIT License.
