@@ -2,7 +2,7 @@ function ProductCard ({product}){
     return(
          <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
       <img
-        src={product.image}
+        src={`${import.meta.env.BASE_URL}${product.image}`}
         alt={product.name}
         className="w-full h-72 object-cover"
       />

@@ -5,7 +5,7 @@ function ProductList() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch("/products/products.json")
+    fetch(`${import.meta.env.BASE_URL}products/products.json`)
       .then((response) => response.json())
       .then((data) => setProducts(data))
       .catch((error) => console.log(error));
