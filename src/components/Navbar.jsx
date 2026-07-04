@@ -12,7 +12,6 @@ import { useContext } from "react";
 import { useState } from "react";
 import { CartContext } from "../context/CartContext";
 
-
 function Navbar() {
   const { cart, setCart } = useContext(CartContext);
 
@@ -24,45 +23,47 @@ function Navbar() {
     bg-background/95  backdrop-blur supports-[backdrop-filter]:bg-background/60
      flex  justify-between items-center  "
     >
- <Link
-  to="/"
-  className="flex items-center"
->
-  <img
-    src="/images/logo2.png"
-    alt="Luxy Bags"
-    className="h-25 w-auto object-contain"
-  />
-    <h1 className="text-xl font-bold text-gray-900">
-      Luxy Bags
-    </h1>
-</Link>
-     <button className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
+      <Link to="/" className="flex items-center">
+        <img
+          src="/images/logo2.png"
+          alt="Luxy Bags"
+          className="h-25 w-auto object-contain"
+        />
+        <h1 className="text-xl font-bold text-gray-900">Luxy Bags</h1>
+      </Link>
+      <button className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
         <Menu size={28} />
       </button>
-        
-        <div className="hidden md:flex items-center justify-between flex-1">
-          <ul className="flex gap-6 mx-auto">
-            <li className="hover:text-pink-500 flex items-center gap-2">
-              <House className="w-4 h-4" />
-              <Link to="/"> Home</Link>
-            </li>
 
-            <li className="hover:text-pink-500 flex items-center gap-2">
-              <ShoppingBag className="w-4 h-4" />
-              <Link to="/products"> Products</Link>
-            </li>
+      <div className="hidden md:flex items-center justify-between flex-1">
+        <ul className="flex gap-6 mx-auto">
+          <li className="hover:text-pink-500 flex items-center gap-2">
+            <House className="w-4 h-4" />
+            <Link to="/"> Home</Link>
+          </li>
 
-            <li className="hover:text-pink-500 flex items-center gap-2">
-              <Info className="w-4 h-4" />
-              <Link to="/about"> About Us</Link>
-            </li>
+          <li className="hover:text-pink-500 flex items-center gap-2">
+            <ShoppingBag className="w-4 h-4" />
+            <Link to="/products"> Products</Link>
+          </li>
 
-            <li className="hover:text-pink-500 flex items-center gap-2">
-              <Phone className="w-4 h-4" />
-              <Link to="/contact"> Contact Us</Link>
-            </li>
-          </ul>
+          <li className="hover:text-pink-500 flex items-center gap-2">
+            <Info className="w-4 h-4" />
+            <Link to="/about"> About Us</Link>
+          </li>
+
+          <li className="hover:text-pink-500 flex items-center gap-2">
+            <Phone className="w-4 h-4" />
+            <Link to="/contact"> Contact Us</Link>
+          </li>
+        </ul>
+        <div className="flex items-center gap-5">
+          <Link
+            to="/login"
+            className="px-5 py-2 rounded-lg bg-pink-500 text-white hover:bg-pink-600 transition"
+          >
+            Login
+          </Link>
           <Link to="/cart" className="relative">
             <ShoppingCart className="w-7 h-7 mr-3" />
 
@@ -73,10 +74,11 @@ function Navbar() {
             )}
           </Link>
         </div>
-      
+      </div>
+
       {isOpen && (
-       <div className="absolute top-full left-0 w-full bg-pink-100 shadow-lg md:hidden">
-       <ul className="flex flex-col p-4 gap-4">
+        <div className="absolute top-full left-0 w-full bg-pink-100 shadow-lg md:hidden">
+          <ul className="flex flex-col p-4 gap-4">
             <li className="hover:text-pink-500 flex items-center gap-2">
               <House className="w-4 h-4" />
               <Link to="/"> Home</Link>
