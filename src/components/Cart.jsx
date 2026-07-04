@@ -4,7 +4,7 @@ import { CartContext } from "../context/CartContext"
 import React from 'react'
 
 function Cart() {
-    const { cart } = useContext(CartContext)
+    const { cart, setCart } = useContext(CartContext)
 
     const totalPrice = cart.reduce(
         (sum, item) => sum + (item.price * (item.quantity || 1)),0);
@@ -17,7 +17,6 @@ function Cart() {
         setCart([]);
     }
   return (
-  
     <section className="min-h-screen bg-pink-50 py-10 px-4">
       <div className="max-w-2xl mx-auto bg-white rounded-xl shadow-lg p-6">
         <h1 className="text-3xl font-bold mb-6">Shopping Cart</h1>

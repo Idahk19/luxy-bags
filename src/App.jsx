@@ -7,12 +7,11 @@ import Home from "./pages/Home";
 import Products from "./pages/Products";
 import AboutUs from "./pages/AboutUs";
 import ContactUs from "./pages/ContactUs";
-import { CartProvider } from "./context/CartContext";
+
 
 function App (){
   return(
     <> 
-    <cartProvider>
      <Router>
       <Navbar />
        <Routes>
@@ -22,8 +21,6 @@ function App (){
        <Route path="/contact" element={<ContactUs/>}/>
       </Routes>
     </Router>
-      
-    </cartProvider>
   </>
   )
   

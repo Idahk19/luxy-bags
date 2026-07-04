@@ -1,4 +1,10 @@
+import { useContext } from "react";
+import { CartContext } from "../context/CartContext";
+
 function ProductCard ({product}){
+
+  const { cart, setCart } = useContext(CartContext);
+  console.log(cart);
     return(
          <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
       <img
@@ -18,9 +24,12 @@ function ProductCard ({product}){
           {product.price}
         </p>
 
-        <button className="mt-4 w-full bg-black text-white py-2 rounded hover:bg-gray-800">
-          Add to Cart
-        </button>
+        <button
+  onClick={() => setCart([...cart, product])}
+  className="mt-4 w-full bg-black text-white py-2 rounded hover:bg-gray-800"
+>
+  Add to Cart
+</button>
       </div>
     </div>
 
