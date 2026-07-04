@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 function Navbar(){
     return(
    <nav className="sticky top-0 z-50 w-full border-b bg-pink-300/60 bg-background/95  backdrop-blur supports-[backdrop-filter]:bg-background/60 flex justify-between items-center p-4 ">
@@ -5,19 +7,19 @@ function Navbar(){
 
       <ul className="flex gap-6">
         <li>
-          <a href="#home">Home</a>
+          <Link to="/"> Home</Link>
         </li>
 
         <li>
-          <a href="#products">Products</a>
+          <Link to="/products"> Products</Link>
         </li>
 
         <li>
-          <a href="#about">About</a>
+          <Link to="/about"> About Us</Link>
         </li>
 
         <li>
-          <a href="#contact">Contact</a>
+          <Link to="/contact"> Contact Us</Link>
         </li>
       </ul>
     </nav> 
