@@ -7,11 +7,13 @@ import Home from "./pages/Home";
 import Products from "./pages/Products";
 import AboutUs from "./pages/AboutUs";
 import ContactUs from "./pages/ContactUs";
+import { CartProvider } from "./context/CartContext";
 
 function App (){
   return(
     <> 
-    <Router>
+    <cartProvider>
+     <Router>
       <Navbar />
        <Routes>
        <Route path="/" element={<Home/>}/>
@@ -21,7 +23,7 @@ function App (){
       </Routes>
     </Router>
       
-
+    </cartProvider>
   </>
   )
   
