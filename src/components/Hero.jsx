@@ -1,9 +1,44 @@
 function Hero(){
     return(
-       <section className="bg-pink-200 text-center flex items-center flex-col py-32 justify-center">
-        <h1 className="text-5xl font-bold text-pink-700 mb-4">Welcome to Luxy Bags</h1>
-        <p className="text-gray-700 text-lg max-w-2xl mb-6">Discover stylish handbags designed to make every outfit stand out.</p>
-        <button className="bg-pink-600 text-white px-6 py-3 rounded-lg hover:bg-pink-700">Shop Now</button>
+       <section className="w-full h-screen bg-cover flex items-center bg-center "
+        style={{ backgroundImage: `url('/images/bg-image.jpg')`  }}>
+
+        <div className="
+        w-full h-screen
+bg-black/40
+backdrop-blur
+border
+border-white/40
+rounded-2xl
+p-10
+shadow-xl
+flex
+flex-col
+justify-center
+items-center
+
+">
+       <div className="max-w-5xl text-left sm:text-center">
+  <p className="uppercase tracking-[0.35em] text-pink-300 text-sm font-semibold mb-4">
+    LUXY BAGS
+  </p>
+
+  <h1 className="text-5xl md:text-7xl font-bold leading-tight text-white mb-6">
+    Luxury in <br />
+    Every Detail
+  </h1>
+
+  <p className="text-lg md:text-xl text-gray-300 leading-8 mb-10">
+    Elevate your everyday style with handbags crafted for elegance,
+    confidence, and timeless beauty. Discover premium designs that
+    complement every occasion and leave a lasting impression.
+  </p>
+
+  <button className="bg-pink-500 hover:bg-pink-600 text-white font-semibold px-8 py-4 rounded-full shadow-xl transition duration-300 hover:scale-105">
+    Shop Collection
+  </button>
+</div>
+        </div>
        </section> 
     )
 }
