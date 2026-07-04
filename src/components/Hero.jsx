@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 function Hero(){
     return(
        <section className="w-full h-screen bg-cover flex items-center bg-center "
@@ -33,9 +35,8 @@ items-center
     confidence, and timeless beauty. Discover premium designs that
     complement every occasion and leave a lasting impression.
   </p>
-
   <button className="bg-pink-500 hover:bg-pink-600 text-white font-semibold px-8 py-4 rounded-full shadow-xl transition duration-300 hover:scale-105">
-    Shop Collection
+   <Link to="/products"> Shop Collection </Link>
   </button>
 </div>
         </div>
