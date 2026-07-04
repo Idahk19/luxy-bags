@@ -36,7 +36,10 @@ items-center
     complement every occasion and leave a lasting impression.
   </p>
   <button className="bg-pink-500 hover:bg-pink-600 text-white font-semibold px-8 py-4 rounded-full shadow-xl transition duration-300 hover:scale-105">
-   <Link to="/products"> Shop Collection </Link>
+   <Link to="/signup"> Sign Up </Link>
+  </button>{"  "}
+  <button className="bg-pink-500 hover:bg-pink-600 text-white font-semibold px-8 py-4 rounded-full shadow-xl transition duration-300 hover:scale-105">
+   <Link to="/products">Collection</Link>
   </button>
 </div>
         </div>
