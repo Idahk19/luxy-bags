@@ -9,19 +9,19 @@ function AboutUs() {
       >
         <div className="bg-black/70 w-full min-h-screen flex flex-col items-center gap-6">
           <div className=" mt-4 max-w-2xl bg-black/50 backdrop-blur-sm p-8 rounded-2xl mb-4 shadow-xl">
-             <h2 className="text-xl font-semibold text-pink-600 mb-2">
+             <h2 className="text-xl font-semibold text-pink-400 mb-2">
               Who Are We 
             </h2>
             <p className="text-white text-lg leading-8">
               Welcome to {""}
-               <span className="font-semibold text-pink-300">Luxy Bags</span>,
+               <span className="font-semibold text-pink-400">Luxy Bags</span>,
               where fashion meets elegance. We believe that every handbag is
               more than just an accessory, it's a statement of confidence,
               style, and personality.
             </p>
           </div>
           <div className="max-w-2xl bg-black/50 backdrop-blur-sm p-8 rounded-2xl mb-4 shadow-xl">
-              <h2 className="text-xl font-semibold text-pink-600 mb-2">
+              <h2 className="text-xl font-semibold text-pink-400 mb-2">
               What We Offer
             </h2>
             <p className="text-white text-lg leading-8">
@@ -32,7 +32,7 @@ function AboutUs() {
             </p>
           </div>
           <div className="max-w-2xl bg-black/50 backdrop-blur-sm p-8 rounded-2xl mb-4 shadow-xl">
-            <h2 className="text-xl font-semibold text-pink-600 mb-2">
+            <h2 className="text-xl font-semibold text-pink-400 mb-2">
               Our Mission
             </h2>
             <p className="text-white">
@@ -41,7 +41,7 @@ function AboutUs() {
             </p>
           </div>
           <div className="max-w-2xl bg-black/50 backdrop-blur-sm p-8 rounded-2xl mb-4 shadow-xl">
-            <h2 className="text-xl font-semibold text-pink-600 mb-2">
+            <h2 className="text-xl font-semibold text-pink-400 mb-2">
               Our Vision
             </h2>
             <p className="text-white">
@@ -50,7 +50,7 @@ function AboutUs() {
             </p>
           </div>
           <div className="max-w-2xl bg-black/50 backdrop-blur-sm p-8 rounded-2xl mb-4 shadow-xl">
-            <h2 className="text-xl font-semibold text-pink-600 mb-2">
+            <h2 className="text-xl font-semibold text-pink-400 mb-2">
               Our Values
             </h2>
 
