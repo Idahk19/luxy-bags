@@ -22,9 +22,21 @@ function Navbar() {
     <nav
       className="sticky top-0 z-50 w-full border-b bg-pink-300/60
     bg-background/95  backdrop-blur supports-[backdrop-filter]:bg-background/60
-     flex  justify-between items-center p-4 "
+     flex  justify-between items-center  "
     >
-    <h1 className="text-2xl font-bold">Luxy Bags</h1>
+ <Link
+  to="/"
+  className="flex items-center"
+>
+  <img
+    src="/images/logo2.png"
+    alt="Luxy Bags"
+    className="h-25 w-auto object-contain"
+  />
+    <h1 className="text-xl font-bold text-gray-900">
+      Luxy Bags
+    </h1>
+</Link>
      <button className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
         <Menu size={28} />
       </button>
@@ -52,7 +64,7 @@ function Navbar() {
             </li>
           </ul>
           <Link to="/cart" className="relative">
-            <ShoppingCart className="w-7 h-7" />
+            <ShoppingCart className="w-7 h-7 mr-3" />
 
             {cart.length > 0 && (
               <span className="absolute -top-2 -right-2 bg-pink-600 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
