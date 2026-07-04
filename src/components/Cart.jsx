@@ -52,6 +52,13 @@ function Cart() {
               <h2 className="text-xl font-bold">
                 Total: Ksh {totalPrice}
               </h2>
+                   <button
+      onClick={handleClearCart}
+      className="bg-gray-300 hover:bg-gray-400 px-6 py-3 rounded-lg"
+    >
+      Clear Cart
+    </button>
+              
 
               <button className="bg-pink-600 hover:bg-pink-700 text-white px-6 py-3 rounded-lg">
                 Checkout
