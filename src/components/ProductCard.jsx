@@ -21,7 +21,7 @@ function ProductCard ({product}){
         </p>
 
         <p className="text-pink-600 font-bold text-lg mt-3">
-          {product.price}
+         Ksh {product.price}
         </p>
 
         <button

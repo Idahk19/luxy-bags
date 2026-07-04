@@ -31,7 +31,7 @@ function Navbar() {
         />
         <h1 className="text-xl font-bold text-gray-900">Luxy Bags</h1>
       </Link>
-      <button className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
+      <button className="md:hidden mr-5" onClick={() => setIsOpen(!isOpen)}>
         <Menu size={28} />
       </button>
 
@@ -77,7 +77,7 @@ function Navbar() {
       </div>
 
       {isOpen && (
-        <div className="absolute top-full left-0 w-full bg-pink-100 shadow-lg md:hidden">
+        <div className="absolute top-full left-2 w-full bg-pink-100 shadow-lg md:hidden">
           <ul className="flex flex-col p-4 gap-4">
             <li className="hover:text-pink-500 flex items-center gap-2">
               <House className="w-4 h-4" />
