@@ -42,8 +42,8 @@ function Navbar() {
         <Menu size={28} />
       </button>
 
-      <div className="hidden md:flex items-center justify-between flex-1">
-        <ul className="flex gap-6 mx-auto">
+      <div onClick={() => setIsOpen(false)} className=" hidden md:flex items-center justify-between flex-1">
+        <ul className="flex gap-6 mx-auto" >
           <li className="hover:text-pink-500 flex items-center gap-2">
             <House className="w-4 h-4" />
             <Link to="/"> Home</Link>
@@ -96,7 +96,7 @@ function Navbar() {
       </div>
 
       {isOpen && (
-        <div className="absolute top-full left-2 w-full bg-pink-100 shadow-lg md:hidden">
+        <div onClick={() => setIsOpen(false)} className="absolute top-full left-2 w-full bg-pink-100 shadow-lg md:hidden">
           <ul className="flex flex-col p-4 gap-4">
             <li className="hover:text-pink-500 flex items-center gap-2">
               <House className="w-4 h-4" />
@@ -117,24 +117,24 @@ function Navbar() {
               <Phone className="w-4 h-4" />
               <Link to="/contact"> Contact Us</Link>
             </li>
+                  {currentUser && (
+    <li className="hover:text-pink-500 flex items-center gap-2">
+      <ShoppingCart className="w-4 h-4" />
+      <Link to="/cart">
+        Cart {cart.length > 0 && `(${cart.length})`}
+      </Link>
+    </li>
+  )}
           </ul>
           {currentUser ? (
-            <div>
+            <div className="mb-4">
                <button
               onClick={handleLogout}
               className="px-5 py-2 rounded-lg bg-pink-500 text-white hover:bg-red-600 transition"
             >
               Logout
             </button>
-            <Link to="/cart" className="relative">
-            <ShoppingCart className="w-7 h-7 mr-3" />
-
-            {cart.length > 0 && (
-              <span className="absolute -top-2 -right-2 bg-pink-600 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
-                {cart.length}
-              </span>
-            )}
-          </Link>
+           
             </div>
            
           ) : (
