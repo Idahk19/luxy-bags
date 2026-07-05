@@ -66,21 +66,14 @@ function Navbar() {
         </ul>
         <div className="flex items-center gap-5">
           {currentUser ? (
-            <button
+             <div className="flex items-center gap-5">
+               <button
               onClick={handleLogout}
-              className="px-5 py-2 rounded-lg bg-red-500 text-white hover:bg-red-600 transition"
+              className="px-5 py-2 rounded-lg bg-pink-500 text-white hover:bg-red-600 transition"
             >
               Logout
             </button>
-          ) : (
-            <Link
-              to="/login"
-              className="px-5 py-2 rounded-lg bg-pink-500 text-white hover:bg-pink-600 transition"
-            >
-              Login
-            </Link>
-          )}
-          <Link to="/cart" className="relative">
+            <Link to="/cart" className="relative">
             <ShoppingCart className="w-7 h-7 mr-3" />
 
             {cart.length > 0 && (
@@ -89,6 +82,16 @@ function Navbar() {
               </span>
             )}
           </Link>
+            </div>
+          ) : (
+            <Link
+              to="/login"
+              className="px-5 py-2 rounded-lg bg-pink-500 text-white hover:bg-pink-600 transition"
+            >
+              Login
+            </Link>
+          )}
+         
         </div>
       </div>
 
@@ -116,12 +119,24 @@ function Navbar() {
             </li>
           </ul>
           {currentUser ? (
-            <button
+            <div>
+               <button
               onClick={handleLogout}
-              className="px-5 py-2 rounded-lg bg-red-500 text-white hover:bg-red-600 transition"
+              className="px-5 py-2 rounded-lg bg-pink-500 text-white hover:bg-red-600 transition"
             >
               Logout
             </button>
+            <Link to="/cart" className="relative">
+            <ShoppingCart className="w-7 h-7 mr-3" />
+
+            {cart.length > 0 && (
+              <span className="absolute -top-2 -right-2 bg-pink-600 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
+                {cart.length}
+              </span>
+            )}
+          </Link>
+            </div>
+           
           ) : (
             <Link
               to="/login"
@@ -130,15 +145,6 @@ function Navbar() {
               Login
             </Link>
           )}
-          <Link to="/cart" className="relative">
-            <ShoppingCart className="w-7 h-7" />
-
-            {cart.length > 0 && (
-              <span className="absolute -top-2 -right-2 bg-pink-600 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
-                {cart.length}
-              </span>
-            )}
-          </Link>
         </div>
       )}
     </nav>
