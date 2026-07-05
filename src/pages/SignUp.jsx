@@ -52,7 +52,7 @@ function SignUp() {
               type="submit"
               className="w-full bg-pink-500 hover:bg-pink-600 text-white font-semibold py-3 rounded-lg transition duration-300"
             >
-              Send Message
+              Sign Up
             </button>
 
         </form>

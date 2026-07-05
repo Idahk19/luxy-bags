@@ -1,6 +1,6 @@
 import React from 'react'
 
-function SignUp() {
+function Login() {
   return (
     <div>
       <section className="min-h-screen bg-cover bg-center" 
@@ -10,18 +10,10 @@ function SignUp() {
 
         <div className="items-center flex flex-col ">
           <h1 className="text-4xl font-bold text-pink-400 mb-4">
-              Sign Up here
+              Login
             </h1>
         <form className="w-full max-w-md">
-          <div>
-              <label className="block text-white mb-2">Full Name</label>
-              <input
-                type="text"
-                placeholder="Enter your full name"
-                className="w-full rounded-lg p-3 bg-white/20 border border-white/30 text-white placeholder-gray-300 outline-none focus:border-pink-400"
-              />
-            </div>
-
+        
             <div>
               <label className="block text-white mb-2">Email Address</label>
               <input
@@ -39,20 +31,12 @@ function SignUp() {
                 className="w-full rounded-lg p-3 bg-white/20 border border-white/30 text-white placeholder-gray-300 outline-none focus:border-pink-400"
               />
             </div>
-            <div>
-              <label className="block text-white mb-2"> Repeat Password</label>
-              <input
-                type="text"
-                placeholder="Subject"
-                className="w-full rounded-lg p-3 bg-white/20 border border-white/30 text-white placeholder-gray-300 outline-none focus:border-pink-400"
-              />
-            </div>
 
             <button
               type="submit"
               className="w-full bg-pink-500 hover:bg-pink-600 text-white font-semibold py-3 rounded-lg transition duration-300"
             >
-              Send Message
+              Log In
             </button>
 
         </form>
