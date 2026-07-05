@@ -17,6 +17,13 @@ function Navbar() {
 
   const [isOpen, setIsOpen] = useState(false);
 
+  const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+
+  const handleLogout = () => {
+    localStorage.removeItem("currentUser");
+    window.location.reload();
+  };
+
   return (
     <nav
       className="sticky top-0 z-50 w-full border-b bg-pink-300/60
@@ -58,12 +65,21 @@ function Navbar() {
           </li>
         </ul>
         <div className="flex items-center gap-5">
-          <Link
-            to="/login"
-            className="px-5 py-2 rounded-lg bg-pink-500 text-white hover:bg-pink-600 transition"
-          >
-            Login
-          </Link>
+          {currentUser ? (
+            <button
+              onClick={handleLogout}
+              className="px-5 py-2 rounded-lg bg-red-500 text-white hover:bg-red-600 transition"
+            >
+              Logout
+            </button>
+          ) : (
+            <Link
+              to="/login"
+              className="px-5 py-2 rounded-lg bg-pink-500 text-white hover:bg-pink-600 transition"
+            >
+              Login
+            </Link>
+          )}
           <Link to="/cart" className="relative">
             <ShoppingCart className="w-7 h-7 mr-3" />
 
@@ -99,6 +115,21 @@ function Navbar() {
               <Link to="/contact"> Contact Us</Link>
             </li>
           </ul>
+          {currentUser ? (
+            <button
+              onClick={handleLogout}
+              className="px-5 py-2 rounded-lg bg-red-500 text-white hover:bg-red-600 transition"
+            >
+              Logout
+            </button>
+          ) : (
+            <Link
+              to="/login"
+              className="px-5 py-2 rounded-lg bg-pink-500 text-white hover:bg-pink-600 transition"
+            >
+              Login
+            </Link>
+          )}
           <Link to="/cart" className="relative">
             <ShoppingCart className="w-7 h-7" />
 
