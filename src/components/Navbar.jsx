@@ -86,7 +86,7 @@ function Navbar() {
           ) : (
             <Link
               to="/login"
-              className="px-5 py-2 rounded-lg bg-pink-500 text-white hover:bg-pink-600 transition"
+              className="px-5 py-2 mr-4 rounded-lg bg-pink-500 text-white hover:bg-pink-600 transition"
             >
               Login
             </Link>

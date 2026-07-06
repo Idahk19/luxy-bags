@@ -64,6 +64,7 @@ function Login() {
                   type="password"
                   name="password"
                   value={loginData.password}
+                  placeholder="Enter your password"
                   onChange={handleChange}
                   className="w-full rounded-lg p-3 bg-white/20 border border-white/30 text-white placeholder-gray-300 outline-none focus:border-pink-400"
                 />
@@ -75,6 +76,8 @@ function Login() {
               >
                 Log In
               </button>
+
+              
             </form>
           </div>
         </div>
