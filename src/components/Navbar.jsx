@@ -66,7 +66,7 @@ function Navbar() {
         </ul>
         <div className="flex items-center gap-5">
           {currentUser ? (
-             <div className="flex items-center gap-5">
+             <div className="flex items-center gap-5 mr-4">
                <button
               onClick={handleLogout}
               className="px-5 py-2 rounded-lg bg-pink-500 text-white hover:bg-red-600 transition"
