@@ -33,6 +33,7 @@ function Login() {
     localStorage.setItem("currentUser", JSON.stringify(user));
 
     navigate("/");
+    window.location.reload();
   };
   return (
     <div>
