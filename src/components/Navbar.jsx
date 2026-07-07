@@ -64,6 +64,14 @@ function Navbar() {
             <Link to="/contact"> Contact Us</Link>
           </li>
         </ul>
+        <Link to="/cart" className="relative">
+            <ShoppingCart className="w-7 h-7 mr-6" />
+            {cart.length > 0 && (
+              <span className="absolute -top-2 right-0.5 bg-pink-600 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
+                {cart.length}
+              </span>
+            )}
+          </Link>
         <div className="flex items-center gap-5">
           {currentUser ? (
              <div className="flex items-center gap-5 mr-4">
@@ -73,20 +81,12 @@ function Navbar() {
             >
               Logout
             </button>
-            <Link to="/cart" className="relative">
-            <ShoppingCart className="w-7 h-7 mr-3" />
-
-            {cart.length > 0 && (
-              <span className="absolute -top-2 -right-2 bg-pink-600 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
-                {cart.length}
-              </span>
-            )}
-          </Link>
+            
             </div>
           ) : (
             <Link
               to="/login"
-              className="px-5 py-2 mr-4 rounded-lg bg-pink-500 text-white hover:bg-pink-600 transition"
+              className="px-5 py-2 mr-2 rounded-lg bg-pink-500 text-white hover:bg-pink-600 transition"
             >
               Login
             </Link>
@@ -117,14 +117,14 @@ function Navbar() {
               <Phone className="w-4 h-4" />
               <Link to="/contact"> Contact Us</Link>
             </li>
-                  {currentUser && (
+                
     <li className="hover:text-pink-500 flex items-center gap-2">
       <ShoppingCart className="w-4 h-4" />
       <Link to="/cart">
         Cart {cart.length > 0 && `(${cart.length})`}
       </Link>
     </li>
-  )}
+
           </ul>
           {currentUser ? (
             <div className="mb-4">
