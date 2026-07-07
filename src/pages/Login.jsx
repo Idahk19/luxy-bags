@@ -2,6 +2,7 @@ import React from "react";
 import SignUp from "./SignUp";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { Toaster } from "sonner";
 
 function Login() {
   const [loginData, setLoginData] = useState({

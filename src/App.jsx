@@ -10,6 +10,7 @@ import ContactUs from "./pages/ContactUs";
 import Cart from "./components/Cart";
 import SignUp from './pages/SignUp';
 import Login from "./pages/Login";
+import { Toaster } from "sonner"
 
 function App (){
   return(
@@ -24,6 +25,7 @@ function App (){
        <Route path="/cart" element={<Cart />} />
        <Route path="/signup" element={<SignUp />} />
        <Route path="/login" element={<Login />} />
+        <Toaster richColors position="top-right" />
       </Routes>
     </Router>
   </>
