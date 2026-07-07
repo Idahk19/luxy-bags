@@ -47,7 +47,24 @@ items-center
   <ArrowRight size={20} />
 </Link>
 </div>
+  <div className="mt-10 flex flex-wrap justify-center gap-8 text-white">
+  <div>
+    <h3 className="text-2xl font-bold">50+</h3>
+    <p className="text-gray-300">Luxury Bags</p>
+  </div>
+
+  <div>
+    <h3 className="text-2xl font-bold">200+</h3>
+    <p className="text-gray-300">Happy Customers</p>
+  </div>
+
+  <div>
+    <h3 className="text-2xl font-bold">24/7</h3>
+    <p className="text-gray-300">Customer Support</p>
+  </div>
+</div>
         </div>
+  
        </section> 
     )
 }
