@@ -49,7 +49,9 @@ function SignUp() {
     users.push(newUser);
     localStorage.setItem("users", JSON.stringify(users));
 
-    alert("Registration successful!");
+    alert("Registration successful!"); 
+
+    Navigate("/login")
 
     // Clear form
     setFormData({

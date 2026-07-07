@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import { ArrowRight } from "lucide-react";
 
 function Hero(){
     return(
@@ -38,9 +39,13 @@ items-center
   <button className="bg-pink-500 hover:bg-pink-600 text-white font-semibold px-8 py-4 rounded-full shadow-xl transition duration-300 hover:scale-105">
    <Link to="/signup"> Sign Up </Link>
   </button>{"  "}
-  <button className="bg-pink-500 hover:bg-pink-600 text-white font-semibold px-8 py-4 rounded-full shadow-xl transition duration-300 hover:scale-105">
-   <Link to="/products">Collection</Link>
-  </button>
+  <Link
+  to="/products"
+  className="inline-flex items-center gap-2 bg-pink-500 hover:bg-pink-600 text-white font-semibold px-8 py-4 rounded-full transition"
+>
+  Shop Collection
+  <ArrowRight size={20} />
+</Link>
 </div>
         </div>
        </section> 
