@@ -54,5 +54,189 @@
     "price":  3000,
     "image": "images/bag8.png",
     "description": "A trendy bucket bag with a roomy interior."
+  },
+  {
+    "id": 8,
+    "name": "Travel Duffel",
+    "price": 5200,
+    "category": "Travel",
+    "description": "Spacious duffel for short trips.",
+    "image": "/images/bag8.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Elegant Satchel",
+    "price": 3700,
+    "category": "Satchel",
+    "description": "Classic satchel with premium finish.",
+    "image": "/images/bag9.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Everyday Sling",
+    "price": 2100,
+    "category": "Sling Bag",
+    "description": "Lightweight sling for everyday essentials.",
+    "image": "/images/bag10.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Luxury Bucket Bag",
+    "price": 4000,
+    "category": "Bucket Bag",
+    "description": "Fashion-forward bucket bag.",
+    "image": "/images/bag11.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Vintage Messenger",
+    "price": 4500,
+    "category": "Messenger",
+    "description": "Vintage-inspired messenger bag.",
+    "image": "/images/bag12.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Chain Strap Purse",
+    "price": 3100,
+    "category": "Handbag",
+    "description": "Elegant purse with gold chain strap.",
+    "image": "/images/bag13.jpg"
+  },
+  {
+    "id": 14,
+    "name": "Quilted Shoulder Bag",
+    "price": 4300,
+    "category": "Shoulder Bag",
+    "description": "Soft quilted design with luxury feel.",
+    "image": "/images/bag14.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Casual Tote",
+    "price": 2500,
+    "category": "Tote Bag",
+    "description": "Perfect companion for shopping days.",
+    "image": "/images/bag15.jpg"
+  },
+  {
+    "id": 16,
+    "name": "Weekend Backpack",
+    "price": 3600,
+    "category": "Backpack",
+    "description": "Ideal for weekend adventures.",
+    "image": "/images/bag16.jpg"
+  },
+  {
+    "id": 17,
+    "name": "Elegant Mini Bag",
+    "price": 2700,
+    "category": "Mini Bag",
+    "description": "Compact yet stylish.",
+    "image": "/images/bag17.jpg"
+  },
+  {
+    "id": 18,
+    "name": "Luxury Work Tote",
+    "price": 4900,
+    "category": "Office",
+    "description": "Professional tote for work.",
+    "image": "/images/bag18.jpg"
+  },
+  {
+    "id": 19,
+    "name": "Leather Crossbody",
+    "price": 3400,
+    "category": "Crossbody",
+    "description": "Soft genuine leather crossbody.",
+    "image": "/images/bag19.jpg"
+  },
+  {
+    "id": 20,
+    "name": "Classic Purse",
+    "price": 2300,
+    "category": "Purse",
+    "description": "Simple and elegant design.",
+    "image": "/images/bag20.jpg"
+  },
+  {
+    "id": 21,
+    "name": "Travel Backpack",
+    "price": 5500,
+    "category": "Travel",
+    "description": "Large backpack for travel lovers.",
+    "image": "/images/bag21.jpg"
+  },
+  {
+    "id": 22,
+    "name": "Luxury Evening Clutch",
+    "price": 3800,
+    "category": "Clutch",
+    "description": "Perfect for formal events.",
+    "image": "/images/bag22.jpg"
+  },
+  {
+    "id": 23,
+    "name": "Elegant Shopper Bag",
+    "price": 3200,
+    "category": "Shopper",
+    "description": "Roomy and stylish.",
+    "image": "/images/bag23.jpg"
+  },
+  {
+    "id": 24,
+    "name": "Minimalist Tote",
+    "price": 2900,
+    "category": "Tote Bag",
+    "description": "Clean minimalist design.",
+    "image": "/images/bag24.jpg"
+  },
+  {
+    "id": 25,
+    "name": "Soft Leather Handbag",
+    "price": 4600,
+    "category": "Handbag",
+    "description": "Premium soft leather finish.",
+    "image": "/images/bag25.jpg"
+  },
+  {
+    "id": 26,
+    "name": "City Crossbody",
+    "price": 3100,
+    "category": "Crossbody",
+    "description": "Designed for urban fashion.",
+    "image": "/images/bag26.jpg"
+  },
+  {
+    "id": 27,
+    "name": "Fashion Satchel",
+    "price": 3700,
+    "category": "Satchel",
+    "description": "Elegant satchel with modern details.",
+    "image": "/images/bag27.jpg"
+  },
+   {
+    "id": 28,
+    "name": "Luxury Shoulder Tote",
+    "price": 5100,
+    "category": "Shoulder Bag",
+    "description": "Premium shoulder tote.",
+    "image": "/images/bag28.jpg"
+  },
+  {
+    "id": 29,
+    "name": "Compact Mini Purse",
+    "price": 2000,
+    "category": "Mini Bag",
+    "description": "Perfect for essentials.",
+    "image": "/images/bag29.jpg"
+  },
+  {
+    "id": 30,
+    "name": "Signature Luxy Bag",
+    "price": 6000,
+    "category": "Luxury",
+    "description": "The flagship Luxy Bags collection.",
+    "image": "/images/bag30.jpg"
   }
 ]
