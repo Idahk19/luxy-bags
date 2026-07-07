@@ -22,7 +22,7 @@ function SignUp() {
 
     // Check passwords
     if (formData.password !== formData.confirmPassword) {
-      alert("Passwords do not match!");
+      toast.success("Passwords do not match!");
       return;
     }
 
@@ -35,7 +35,7 @@ function SignUp() {
     );
 
     if (existingUser) {
-      alert("Email already exists!");
+      toast.success("Email Already Exists!");
       return;
     }
 
@@ -50,7 +50,7 @@ function SignUp() {
     users.push(newUser);
     localStorage.setItem("users", JSON.stringify(users));
 
-    alert("Registration successful!"); 
+    toast.success("Registration successful!");
 
     Navigate("/login")
 
