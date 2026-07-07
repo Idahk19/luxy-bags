@@ -1,5 +1,6 @@
 import { useContext } from "react"
 import { CartContext } from "../context/CartContext"
+import { Trash2 } from "lucide-react"
 
 import React from 'react'
 
@@ -42,8 +43,8 @@ function Cart() {
                 <button
                   onClick={() => handleRemoveItem(item.id)}
                   className="bg-pink-500 hover:bg-red-600 text-white px-3 py-2 rounded"
-                >
-                  Remove
+                > 
+                <Trash2 className="h-4 w-4" />
                 </button>
               </div>
             ))}

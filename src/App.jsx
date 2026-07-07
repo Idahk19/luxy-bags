@@ -25,8 +25,8 @@ function App (){
        <Route path="/cart" element={<Cart />} />
        <Route path="/signup" element={<SignUp />} />
        <Route path="/login" element={<Login />} />
-        <Toaster richColors position="top-right" />
       </Routes>
+      <Toaster richColors position="top-right" />
     </Router>
   </>
   )
